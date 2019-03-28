@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<br>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<br>
+<input type="button" value="Addition" onclick="cong()" >
+<input type="button" value="Subtraction" onclick="tru()" >
+<input type="button" value="Multiplication" onclick="nhan()">
+<input type="button" value="Division" onclick="chia()">
+<p id="result"></p>
+<script>
+    function cong() {
+        let x = parseInt(document.getElementById('num1').value);
+        let y = parseInt(document.getElementById('num2').value);
+        let result;
+        result = x + y;
+        alert(result);
+        document.getElementById("result").innerHTML = result;
+    }
+    function tru() {
+        let x = parseInt(document.getElementById('num1').value);
+        let y = parseInt(document.getElementById('num2').value);
+        let result;
+        result = x - y;
+        alert(result);
+        document.getElementById("result").innerHTML = result;
+    }
+    function nhan() {
+        let x = parseInt(document.getElementById('num1').value);
+        let y = parseInt(document.getElementById('num2').value);
+        let result;
+        result = x * y;
+        alert(result);
+        document.getElementById("result").innerHTML = result;
+
+    }
+    function chia() {
+        let x = parseInt(document.getElementById('num1').value);
+        let y = parseInt(document.getElementById('num2').value);
+        let result;
+        result = x / y;
+        alert (result);
+        document.getElementById("result").innerHTML = result;
+    }
+
+</script>
+
+
+</body>
+</html>
